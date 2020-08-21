@@ -91,6 +91,6 @@ describe('SendForgotPasswordEmail', () => {
 
     const updatedUser = await fakeUsersRepository.findById(user.id);
 
-    expect(updatedUser?.password).toBe('123123');
+    expect(updatedUser?.password).toBe('123456');
   });
 });
